@@ -1,6 +1,5 @@
 {
   "name": "kuali-ui",
-  "private": true,
   "author": "Kuali",
   "version": "3.0.1",
   "description": "React Components that Implement Google's Material Design.",
