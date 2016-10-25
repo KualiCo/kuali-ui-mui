@@ -1,7 +1,7 @@
 {
-  "name": "material-ui-build",
+  "name": "kuali-ui",
   "private": true,
-  "author": "Call-em-all Engineering Team",
+  "author": "Kuali",
   "version": "0.16.0",
   "description": "React Components that Implement Google's Material Design.",
   "main": "./src/index.js",
