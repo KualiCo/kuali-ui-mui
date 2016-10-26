@@ -5,7 +5,7 @@ please use [StackOverflow](http://stackoverflow.com/questions/tagged/material-ui
 instead of Github issues. There is a StackOverflow tag called "material-ui"
 that you can use to tag your questions.
 
-#[Material-UI](https://kualico.github.io/kuali-ui/)
+#[Kuali-UI](https://kualico.github.io/kuali-ui/)
 [npm package](https://www.npmjs.com/package/kuali-ui)
 
 Kuali-UI is a customized version of Material-UI, which is a set of [React](http://facebook.github.io/react/) components that implement
@@ -50,7 +50,7 @@ Here is a quick example to get you started:
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MuiThemeProvider from 'kuali-ui/styles/MuiThemeProvider';
 import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 
 const App = () => (
@@ -68,7 +68,7 @@ ReactDOM.render(
 **./MyAwesomeReactComponent.js**
 ```jsx
 import React from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
+import RaisedButton from 'kuali-ui/RaisedButton';
 
 const MyAwesomeReactComponent = () => (
   <RaisedButton label="Default" />
