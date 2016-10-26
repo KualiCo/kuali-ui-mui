@@ -72,20 +72,6 @@ export default MyAwesomeReactComponent;
 
 Please refer to each component's documentation page to see how they should be imported.
 
-## Customization
-
-We have implemented a default theme to render all Kuali-UI components.
-Styling components to your liking is simple and hassle-free. This can be
-achieved in the following two ways:
-
-* [Use a custom theme to style components](http://material-ui.com/#/customization/themes)
-* [Override individual component styles via the `style` prop](http://www.material-ui.com/#/customization/inline-styles)
-
-## Roadmap
-
-The future plans and high priority features and enhancements can be found
-in the [ROADMAP.md](https://github.com/callemall/material-ui/blob/master/ROADMAP.md) file.
-
 ## License
 This project is licensed under the terms of the
 [MIT license](https://github.com/callemall/material-ui/blob/master/LICENSE)
