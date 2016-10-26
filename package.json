@@ -2,23 +2,23 @@
   "name": "kuali-ui",
   "author": "Kuali",
   "version": "3.0.1",
-  "description": "React Components that Implement Google's Material Design.",
+  "description": "Kuali-styled Material UI React Components that Implement Google's Material Design.",
   "main": "./src/index.js",
   "keywords": [
     "react",
     "react-component",
-    "material design",
-    "material-ui"
+    "kuali design",
+    "kuali-ui"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/callemall/material-ui.git"
+    "url": "https://github.com/KualiCo/kuali-ui.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/callemall/material-ui/issues"
+    "url": "https://github.com/KualiCo/kuali-ui/issues"
   },
-  "homepage": "http://material-ui.com/",
+  "homepage": "https://kualico.github.io/kuali-ui/",
   "scripts": {
     "build": "npm run build:icon-index && npm run build:babel && npm run build:copy-files",
     "build:icon-index": "babel-node ./scripts/icon-index-generator.js",
