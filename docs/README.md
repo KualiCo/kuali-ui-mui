@@ -1,6 +1,6 @@
-# [Material-UI Docs](http://callemall.github.io/material-ui/)
+#[Kuali-UI Docs](https://kualico.github.io/kuali-ui/)
 
-This is the documentation website and application of Material-UI.
+This is the documentation website and application of Kuali-UI.
 
 ## Requirements
 
@@ -12,9 +12,9 @@ This is the documentation website and application of Material-UI.
 ## Installation
 After cloning the repository, install dependencies:
 ```sh
-cd <project folder>/material-ui
+cd <project folder>/kuali-ui
 npm install
-cd <project folder>/material-ui/docs
+cd <project folder>/kuali-ui/docs
 npm install
 ```
 
