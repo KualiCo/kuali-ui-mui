@@ -20,8 +20,8 @@ export default {
   spacing: spacing,
   fontFamily: 'Roboto, sans-serif',
   palette: {
-    primary1Color: cyan500,
-    primary2Color: cyan700,
+    primary1Color: '#697882',
+    primary2Color: '3A4E5B',
     primary3Color: grey400,
     accent1Color: pinkA200,
     accent2Color: grey100,

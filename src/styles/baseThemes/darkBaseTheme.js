@@ -11,8 +11,8 @@ export default {
   spacing: spacing,
   fontFamily: 'Roboto, sans-serif',
   palette: {
-    primary1Color: cyan700,
-    primary2Color: cyan700,
+    primary1Color: '#697882',
+    primary2Color: '#697882',
     primary3Color: grey600,
     accent1Color: pinkA200,
     accent2Color: pinkA400,

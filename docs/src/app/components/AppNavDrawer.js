@@ -17,7 +17,7 @@ const styles = {
     color: typography.textFullWhite,
     lineHeight: `${spacing.desktopKeylineIncrement}px`,
     fontWeight: typography.fontWeightLight,
-    backgroundColor: cyan500,
+    backgroundColor: '#697882',
     paddingLeft: spacing.desktopGutter,
     marginBottom: 8,
   },
@@ -78,9 +78,9 @@ class AppNavDrawer extends Component {
 
   handleVersionChange = (event, index, value) => {
     if (value === this.firstNonPreReleaseVersion()) {
-      window.location = 'http://www.material-ui.com/';
+      window.location = 'http://www.kualiux.com/';
     } else {
-      window.location = `http://www.material-ui.com/${value}`;
+      window.location = `http://www.kualiux.com/${value}`;
     }
   };
 
@@ -121,7 +121,7 @@ class AppNavDrawer extends Component {
         containerStyle={{zIndex: zIndex.drawer - 100}}
       >
         <div style={styles.logo} onTouchTap={this.handleTouchTapHeader}>
-          Material-UI
+          Kuali UI
         </div>
         <span style={styles.version}>Version:</span>
         <DropDownMenu
@@ -415,7 +415,7 @@ class AppNavDrawer extends Component {
           onChange={this.handleRequestChangeLink}
         >
           <Subheader>Resources</Subheader>
-          <ListItem primaryText="GitHub" value="https://github.com/callemall/material-ui" />
+          <ListItem primaryText="GitHub" value="https://github.com/KualiCo/kuali-ui" />
           <ListItem primaryText="React" value="http://facebook.github.io/react" />
           <ListItem
             primaryText="Material Design"

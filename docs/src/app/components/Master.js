@@ -167,7 +167,7 @@ class Master extends Component {
 
     return (
       <div>
-        <Title render="Material-UI" />
+        <Title render="Kuali UI" />
         <AppBar
           onLeftIconButtonTouchTap={this.handleTouchTapLeftIconButton}
           title={title}

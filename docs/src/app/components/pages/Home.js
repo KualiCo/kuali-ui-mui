@@ -21,7 +21,7 @@ class HomePage extends Component {
   homePageHero() {
     const styles = {
       root: {
-        backgroundColor: cyan500,
+        backgroundColor: '#697882',
         overflow: 'hidden',
       },
       svgLogo: {
@@ -83,15 +83,14 @@ class HomePage extends Component {
       <FullWidthSection style={styles.root}>
         <img style={styles.svgLogo} src="images/material-ui-logo.svg" />
         <div style={styles.tagline}>
-          <h1 style={styles.h1}>Material-UI</h1>
           <h2 style={styles.h2}>
-            A Set of React Components <span style={styles.nowrap}>
-            that Implement</span> <span style={styles.nowrap}>
-            Google&apos;s Material Design</span>
+            Kuali UI - A Set of React Components <span style={styles.nowrap}>
+            based on Material UI:</span> <span style={styles.nowrap}>
+            Google&apos;s Material Design.</span>
           </h2>
           <RaisedButton
             className="demo-button"
-            label="Demo"
+            label="Check It Out"
             onTouchTap={this.handleTouchTapDemo}
             style={styles.demoStyle}
             labelStyle={styles.label}
