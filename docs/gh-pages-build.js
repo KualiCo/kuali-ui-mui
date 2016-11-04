@@ -100,15 +100,10 @@ function buildDocs() {
   // Checkout the `gh-pages` branch and update from upstream
   execho('git checkout gh-pages && git pull upstream gh-pages');
 
-  console.log('deleting last head')
-
   // Delete last HEAD commit to keep the history clean, unless we're committing a new HEAD version
   if (lastCommitIsHead() && version !== 'HEAD') {
-    console.log('in here')
     execho('git reset --hard HEAD~1');
   }
-
-  console.log('checking out the tag version')
 
   // Checkout the tag `version` or master for HEAD
   if (version === 'HEAD') {
@@ -119,21 +114,17 @@ function buildDocs() {
 
   // Build the docs site
   execho('npm install && npm run browser:build');
-  console.log('npm install && npm run browser:build');
 
   // Version it
   execho('mv build ../' + version);
-  console.log('mv build ../' + version);
 
   // Move to the gh-pages branch
   execho('git checkout gh-pages');
-  console.log('git checkout gh-pages');
 
   // Symbolic link `release` to latest version
   if (!preRelease(version)) {
     execho('ln -sfh ./' + version + ' ../release');
   }
-  console.log('ln -sfh ./' + version + ' ../release')
 
   // Symbolic link `versions.json` to latest version
   execho('ln -sfh ./' + version + '/versions.json ../versions.json');
