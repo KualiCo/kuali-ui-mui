@@ -100,10 +100,15 @@ function buildDocs() {
   // Checkout the `gh-pages` branch and update from upstream
   execho('git checkout gh-pages && git pull upstream gh-pages');
 
+  console.log('deleting last head')
+
   // Delete last HEAD commit to keep the history clean, unless we're committing a new HEAD version
   if (lastCommitIsHead() && version !== 'HEAD') {
+    console.log('in here')
     execho('git reset --hard HEAD~1');
   }
+
+  console.log('checking out the tag version')
 
   // Checkout the tag `version` or master for HEAD
   if (version === 'HEAD') {
