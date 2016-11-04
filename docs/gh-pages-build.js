@@ -98,7 +98,8 @@ function buildDocs() {
   process.chdir(__dirname);
 
   // Checkout the `gh-pages` branch and update from upstream
-  execho('git checkout gh-pages && git pull upstream gh-pages');
+  execho('git checkout gh-pages');
+  // && git pull upstream gh-pages');
 
   // Delete last HEAD commit to keep the history clean, unless we're committing a new HEAD version
   if (lastCommitIsHead() && version !== 'HEAD') {
