@@ -109,7 +109,7 @@ class TableBody extends Component {
   static defaultProps = {
     allRowsSelected: false,
     deselectOnClickaway: true,
-    displayRowCheckbox: true,
+    displayRowCheckbox: false,
     multiSelectable: false,
     preScanRows: true,
     selectable: true,
@@ -214,6 +214,7 @@ class TableBody extends Component {
         columnNumber={0}
         style={{
           width: 24,
+          height:30,
           cursor: disabled ? 'not-allowed' : 'inherit',
         }}
       >

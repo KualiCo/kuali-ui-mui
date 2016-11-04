@@ -35,7 +35,7 @@ function getStyles(props, context, state) {
 
   const amount = (primary || secondary) ? 0.4 : 0.08;
 
-  let backgroundColor = raisedButton.color;
+  let backgroundColor = '#eeeeee';
   let labelColor = raisedButton.textColor;
 
   if (disabled) {
@@ -59,6 +59,32 @@ function getStyles(props, context, state) {
   const buttonHeight = style && style.height || button.height;
   const borderRadius = 2;
 
+  //changed boxShadow based on state
+  let boxShadow = '';
+  if(state.zDepth === 1){
+    boxShadow = 'inset 0px -2px 0px 0px rgba(0,0,0,.2)';
+  }
+  else if(state.zDepth === 2 && state.keyboardFocused === true){
+    boxShadow = 'inset 0px 0px 0px 2px rgba(0,0,0,.3)';
+  }
+  else{
+    boxShadow = 'inset 0px 0px 0px 0px rgba(0,0,0,.2)';
+  }
+
+
+//change transform based on state
+let transformY = '';
+if(state.zDepth === 2 && state.hovered && !disabled){
+  transformY = 'translateY(1px)';
+}else if(state.zDepth === 2 && state.keyboardFocused === true){
+  transformY = 'translateY(-2px)';
+}else{
+  transformY = 'translateY(0px)';
+}
+
+
+
+
   return {
     root: {
       display: 'inline-block',
@@ -73,16 +99,18 @@ function getStyles(props, context, state) {
       padding: 0,
       borderRadius: borderRadius,
       transition: transitions.easeOut(),
+      boxShadow: boxShadow,
       backgroundColor: backgroundColor,
       // That's the default value for a button but not a link
       textAlign: 'center',
+      transform: transformY,
     },
     label: {
       position: 'relative',
       opacity: 1,
       fontSize: raisedButton.fontSize,
       letterSpacing: 0,
-      textTransform: raisedButton.textTransform || button.textTransform || 'uppercase',
+      //textTransform: raisedButton.textTransform || button.textTransform || 'uppercase',
       fontWeight: raisedButton.fontWeight,
       margin: 0,
       userSelect: 'none',
@@ -98,14 +126,16 @@ function getStyles(props, context, state) {
     overlay: {
       height: buttonHeight,
       borderRadius: borderRadius,
-      backgroundColor: (state.keyboardFocused || state.hovered) && !disabled &&
-        fade(labelColor, amount),
+      //backgroundColor: (state.keyboardFocused || state.hovered) && !disabled && fade(labelColor, amount),
       transition: transitions.easeOut(),
       top: 0,
     },
     ripple: {
       color: labelColor,
-      opacity: !(primary || secondary) ? 0.1 : 0.16,
+      opacity: !(primary || secondary) ? 0.05 : 0.1,
+    },
+    bushbuttondown: {
+      transform:'translateX(5px)',
     },
   };
 }
@@ -262,7 +292,9 @@ class RaisedButton extends Component {
     // only listen to left clicks
     if (event.button === 0) {
       this.setState({
+        touched: true,
         zDepth: this.state.initialZDepth + 1,
+
       });
     }
     if (this.props.onMouseDown) {
@@ -272,6 +304,7 @@ class RaisedButton extends Component {
 
   handleMouseUp = (event) => {
     this.setState({
+      touched: false,
       zDepth: this.state.initialZDepth,
     });
     if (this.props.onMouseUp) {
@@ -398,14 +431,15 @@ class RaisedButton extends Component {
       <Paper
         className={className}
         style={Object.assign(styles.root, style)}
-        zDepth={this.state.zDepth}
+        zDepth={0}
+        backgroundColorEnabled={false}
       >
         <EnhancedButton
           {...other}
           {...buttonEventHandlers}
           ref="container"
           disabled={disabled}
-          style={Object.assign(styles.button, buttonStyle)}
+          style={Object.assign(styles.button, buttonStyle,)}
           focusRippleColor={mergedRippleStyles.color}
           touchRippleColor={mergedRippleStyles.color}
           focusRippleOpacity={mergedRippleStyles.opacity}

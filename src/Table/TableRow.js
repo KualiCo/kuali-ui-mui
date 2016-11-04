@@ -15,8 +15,10 @@ function getStyles(props, context, state) {
   return {
     root: {
       borderBottom: props.displayBorder && `1px solid ${tableRow.borderColor}`,
-      color: tableRow.textColor,
-      height: tableRow.height,
+      //color: tableRow.textColor,
+      color:'#58595B',
+      //height: tableRow.height,
+      height:'35px',
     },
     cell: {
       backgroundColor: cellBgColor,

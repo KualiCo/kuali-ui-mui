@@ -8,6 +8,7 @@ function getStyles(props, context) {
     circle,
     transitionEnabled,
     zDepth,
+    backgroundColorEnabled,
   } = props;
 
   const {
@@ -18,7 +19,7 @@ function getStyles(props, context) {
   return {
     root: {
       color: paper.color,
-      backgroundColor: paper.backgroundColor,
+      backgroundColor: (backgroundColorEnabled) && paper.backgroundColor,
       transition: transitionEnabled && transitions.easeOut(),
       boxSizing: 'border-box',
       fontFamily: baseTheme.fontFamily,
@@ -56,6 +57,8 @@ class Paper extends Component {
      * This number represents the zDepth of the paper shadow.
      */
     zDepth: propTypes.zDepth,
+
+    backgroundColorEnabled: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -63,6 +66,7 @@ class Paper extends Component {
     rounded: true,
     transitionEnabled: true,
     zDepth: 1,
+    backgroundColorEnabled: true,
   };
 
   static contextTypes = {
@@ -77,6 +81,7 @@ class Paper extends Component {
       style,
       transitionEnabled, // eslint-disable-line no-unused-vars
       zDepth, // eslint-disable-line no-unused-vars
+      backgroundColorEnabled,
       ...other
     } = this.props;
 

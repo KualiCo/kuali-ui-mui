@@ -8,6 +8,8 @@ function getStyles(props, context) {
   return {
     root: {
       borderBottom: `1px solid ${tableHeader.borderColor}`,
+      backgroundColor:'#F1F2F2',
+      height:'0px',
     },
   };
 }
@@ -61,9 +63,9 @@ class TableHeader extends Component {
   };
 
   static defaultProps = {
-    adjustForCheckbox: true,
-    displaySelectAll: true,
-    enableSelectAll: true,
+    adjustForCheckbox: false,
+    displaySelectAll: false,
+    enableSelectAll: false,
     selectAllSelected: false,
   };
 

@@ -6,15 +6,17 @@ function getStyles(props, context) {
 
   return {
     root: {
-      fontWeight: 'normal',
+      fontWeight: 'bold',
       fontSize: 12,
       paddingLeft: tableHeaderColumn.spacing,
       paddingRight: tableHeaderColumn.spacing,
-      height: tableHeaderColumn.height,
+      //height: tableHeaderColumn.height,
+      height:'30px',
       textAlign: 'left',
       whiteSpace: 'nowrap',
       textOverflow: 'ellipsis',
-      color: tableHeaderColumn.textColor,
+      //color: tableHeaderColumn.textColor,
+      color:'#000',
       position: 'relative',
     },
     tooltip: {

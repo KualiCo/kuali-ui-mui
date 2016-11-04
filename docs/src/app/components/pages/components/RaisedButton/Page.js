@@ -9,7 +9,9 @@ import raisedButtonReadmeText from './README';
 import raisedButtonExampleSimpleCode from '!raw!./ExampleSimple';
 import RaisedButtonExampleSimple from './ExampleSimple';
 import raisedButtonExampleComplexCode from '!raw!./ExampleComplex';
+import raisedButtonExampleIconLabelCode from '!raw!./ExampleComplex';
 import RaisedButtonExampleComplex from './ExampleComplex';
+import RaisedButtonExampleIconLabel from './ExampleIconLabel';
 import raisedButtonExampleIconCode from '!raw!./ExampleIcon';
 import RaisedButtonExampleIcon from './ExampleIcon';
 import raisedButtonCode from '!raw!material-ui/RaisedButton/RaisedButton';
@@ -19,6 +21,7 @@ const descriptions = {
   complex: 'The first example uses an `input` as a child component, ' +
   'the next has next has an [SVG Icon](/#/components/svg-icon), with the label positioned after. ' +
   'The final example uses a [Font Icon](/#/components/font-icon), and is wrapped in an anchor tag.',
+  labelIcon: 'You can put an icon `Before` or `After` the label, ',
   icon: 'Examples of Raised Buttons using an icon without a label. The first example uses an' +
   ' [SVG Icon](/#/components/svg-icon), and has the default color. The second example shows' +
   ' how the icon and background color can be changed. The final example uses a' +
@@ -28,21 +31,36 @@ const descriptions = {
 const RaisedButtonPage = () => (
   <div>
     <Title render={(previousTitle) => `Raised Button - ${previousTitle}`} />
-    <MarkdownElement text={raisedButtonReadmeText} />
+    {/* <MarkdownElement text={raisedButtonReadmeText} /> */}
+    
     <CodeExample
-      title="Simple examples"
+      title="The Basics"
       description={descriptions.simple}
       code={raisedButtonExampleSimpleCode}
     >
       <RaisedButtonExampleSimple />
     </CodeExample>
+
+
     <CodeExample
-      title="Complex examples"
+      title="Icon & Label"
+      description={descriptions.labelIcon}
+      code={raisedButtonExampleIconLabelCode}
+    >
+      <RaisedButtonExampleIconLabel />
+    </CodeExample>
+
+
+
+    <CodeExample
+      title="Action Buttons"
       description={descriptions.complex}
       code={raisedButtonExampleComplexCode}
     >
       <RaisedButtonExampleComplex />
     </CodeExample>
+
+
     <CodeExample
       title="Icon examples"
       description={descriptions.icon}
@@ -50,6 +68,7 @@ const RaisedButtonPage = () => (
     >
       <RaisedButtonExampleIcon />
     </CodeExample>
+
     <PropTypeDescription code={raisedButtonCode} />
   </div>
 );

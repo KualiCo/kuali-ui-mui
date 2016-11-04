@@ -7,7 +7,8 @@ function getStyles(props, context) {
     root: {
       paddingLeft: tableRowColumn.spacing,
       paddingRight: tableRowColumn.spacing,
-      height: tableRowColumn.height,
+      //height: tableRowColumn.height,
+      height:'0px',
       textAlign: 'left',
       fontSize: 13,
       overflow: 'hidden',

@@ -127,7 +127,7 @@ class HomePage extends Component {
         contentType="p"
         className="home-purpose"
       >
-        Material-UI came about from our love of&nbsp;
+        Kuali UI came about from our love of&nbsp;
         <a href="http://facebook.github.io/react/">React</a> and&nbsp;
         <a href="https://www.google.com/design/spec/material-design/introduction.html">
          Google's Material Design
