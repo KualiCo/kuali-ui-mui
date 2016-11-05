@@ -52,7 +52,7 @@ We are switching in goal so we can release changes more **often**.
 Regarding going forward, this is likely to be the last `minor` release using the **inline-style** approach.
 We are migrating all the components to a **CSS-in-JS** approach on the `next` branch.
 
-For more details, you can have a look a the [next milestone](https://github.com/callemall/material-ui/milestone/14) as well as the [next project](https://github.com/callemall/material-ui/projects/1)
+For more details, you can have a look a the [next milestone](https://github.com/KualiCo/kuali-ui/milestone/14) as well as the [next project](https://github.com/KualiCo/kuali-ui/projects/1)
 
 :warning: New features based on the `master` branch (inline-style) have low priority and will most likely not be reviewed nor merged.
 
@@ -440,7 +440,7 @@ documentation page.
 
 Have a ton of imports? almost had a heart attack? worry not, we also made a tool
 to ease your pain. checkout the
-[readme](https://github.com/callemall/material-ui/tree/master/packages/material-ui-codemod/README.md).
+[readme](https://github.com/KualiCo/kuali-ui/tree/master/packages/material-ui-codemod/README.md).
 
 ##### Breaking Changes
 - [Core] Improve import path for published lib (#3921)
@@ -630,7 +630,7 @@ import MUI from 'material-ui'; // no changes here :D
 This release includes huge improvements to the implementation
 of components and utility modules. The most important improvement
 is the removal of mixins from the library, thanks to the
-[great efforts](https://github.com/callemall/material-ui/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+author%3Anewoga+style-propable)
+[great efforts](https://github.com/KualiCo/kuali-ui/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+author%3Anewoga+style-propable)
 of @newoga :+1:
 
 There are also improvements to the unit testing infrastructure. We own this
@@ -1524,7 +1524,7 @@ We've cleaned up some of our click/tap events. (#771) Upgrade should be straight
     component specific. In addition to the benefits mentioned in the
     presentation, inline styles allow Material-UI to become CSS preprocessor
     agnostic and make Themeing much more dynamic and simple.
-    [Read our CSS in JS discussion](https://github.com/callemall/material-ui/issues/30)
+    [Read our CSS in JS discussion](https://github.com/KualiCo/kuali-ui/issues/30)
   - Upgrade path:
     - *If you are overriding component CSS classes:* Redefine your overrides as
       an object following [React's inline styles format](https://facebook.github.io/react/tips/inline-styles.html),
@@ -1533,10 +1533,10 @@ We've cleaned up some of our click/tap events. (#771) Upgrade should be straight
       overriding a nested element of the component, check the component's
       documentation and see if there is a style prop available for that nested
       element. If a style prop does not exist for the component's nested element
-      that you are trying to override, [submit an issue](https://github.com/callemall/material-ui/issues/new)
+      that you are trying to override, [submit an issue](https://github.com/KualiCo/kuali-ui/issues/new)
       requesting to have it added.
     - *If you are using any of Material-UI's Less files:* These files have been
-      refactored into their [own javascript files](https://github.com/callemall/material-ui/tree/css-in-js/src/styles)
+      refactored into their [own javascript files](https://github.com/KualiCo/kuali-ui/tree/css-in-js/src/styles)
       and can be accessed like so `var FILENAME = require('material-ui').Styles.FILENAME;`.
       Material-UI has moved away from being a CSS Framework to being simply a
       set of React components.
@@ -1693,7 +1693,7 @@ We've cleaned up some of our click/tap events. (#771) Upgrade should be straight
       For FontIcon, create a custom font file and include it in your project and just pass the Icon
       className into the FontIcon component. For SvgIcon, create a new React component that represents
       that particular icon. This will allow you to package your icons inside your js files. Examples
-      can be found [here](https://github.com/callemall/material-ui/tree/master/src/js/svg-icons).
+      can be found [here](https://github.com/KualiCo/kuali-ui/tree/master/src/js/svg-icons).
     - Additionally, all components that had an icon prop now take an iconClassName prop instead. These
       include FloatingActionButton, IconButton, Menu, MenuItem, and DropDownIcon.
 

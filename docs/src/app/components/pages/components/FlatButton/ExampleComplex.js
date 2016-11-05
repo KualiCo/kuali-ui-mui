@@ -32,7 +32,7 @@ const FlatButtonExampleComplex = () => (
 
     <FlatButton
       label="GitHub Link"
-      href="https://github.com/callemall/material-ui"
+      href="https://github.com/KualiCo/kuali-ui"
       secondary={true}
       icon={<FontIcon className="muidocs-icon-custom-github" />}
     />

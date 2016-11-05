@@ -74,4 +74,4 @@ Please refer to each component's documentation page to see how they should be im
 
 ## License
 This project is licensed under the terms of the
-[MIT license](https://github.com/callemall/material-ui/blob/master/LICENSE)
+[MIT license](https://github.com/KualiCo/kuali-ui/blob/master/LICENSE)

@@ -9,4 +9,4 @@ In detail:
  - Additional `xxxStyle` properties are provided to customize nested elements.
 E.g. `iconStyle`.
 
-If you need to override the inline styles of an element nested deep within a component and there is not a style property available to do so, please [submit an issue](https://github.com/callemall/material-ui/issues) requesting to have one added.
+If you need to override the inline styles of an element nested deep within a component and there is not a style property available to do so, please [submit an issue](https://github.com/KualiCo/kuali-ui/issues) requesting to have one added.

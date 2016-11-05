@@ -47,7 +47,7 @@ describe('<AutoComplete />', () => {
      * otherwise <TextField /> will render input as <input filter="function (...) {...}" ... />,
      * which will have different behaviors in different environments, producing indent conflicts and
      * breaking server rendering.
-     * Read more: https://github.com/callemall/material-ui/issues/4195
+     * Read more: https://github.com/KualiCo/kuali-ui/issues/4195
      */
     it('should not pass filter property to children', () => {
       const wrapper = shallowWithContext(

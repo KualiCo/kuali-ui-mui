@@ -38,7 +38,7 @@ const RaisedButtonExampleComplex = () => (
     />
     <RaisedButton
       label="Github Link"
-      href="https://github.com/callemall/material-ui"
+      href="https://github.com/KualiCo/kuali-ui"
       secondary={true}
       style={styles.button}
       icon={<FontIcon className="muidocs-icon-custom-github" />}

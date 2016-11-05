@@ -30,5 +30,5 @@ through environmental variables.
 * `--file-suffix` - Filter only files ending with a suffix
 
 If you experience any issues building icons or would like a feature added,
-[file an issue](https://github.com/callemall/material-ui/issues) and let us
+[file an issue](https://github.com/KualiCo/kuali-ui/issues) and let us
 know.
