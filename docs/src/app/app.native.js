@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Material-UI
+          Kuali-UI
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.{platform}.js
