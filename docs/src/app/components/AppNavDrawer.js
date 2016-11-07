@@ -78,9 +78,9 @@ class AppNavDrawer extends Component {
 
   handleVersionChange = (event, index, value) => {
     if (value === this.firstNonPreReleaseVersion()) {
-      window.location = 'http://www.kualiux.com/';
+      window.location = '/';
     } else {
-      window.location = `http://www.kualiux.com/${value}`;
+      window.location = `/${value}`;
     }
   };
 

@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/callemall/material-ui.git"
+    "url": "https://github.com/KualiCo/kuali-ui.git"
   },
   "files": [
     "modules",
     "transforms"
   ],
-  "homepage": "https://github.com/callemall/material-ui/tree/master/packages/material-ui-codemod",
+  "homepage": "https://github.com/KualiCo/kuali-ui/tree/master/packages/material-ui-codemod",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.7.5",

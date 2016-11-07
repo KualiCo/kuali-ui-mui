@@ -21,7 +21,7 @@ const FlatButtonExampleIcon = () => (
       style={style}
     />
     <FlatButton
-      href="https://github.com/callemall/material-ui"
+      href="https://github.com/KualiCo/kuali-ui"
       secondary={true}
       icon={<FontIcon className="muidocs-icon-custom-github" />}
       style={style}
